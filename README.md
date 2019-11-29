@@ -1,5 +1,5 @@
 # koa_project
-使用koa编写一些实例
+脚手架：*koa-generator*，使用koa编写一些实例
 
 koa最大的便利就是使用 **async**、**await** 让数据库查询变成同步
 
