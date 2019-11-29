@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js" ></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+</head>
+<body>
+   <div id="app">
+       <button @click="koaGet">koa点击</button>
+   </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+        },
+        methods: {
+            button(){
+
+            },
+            koaGet() {
+                $.ajax({
+                    url: 'http://127.0.0.1:3000/users/allAward',
+                    method: 'post',
+                    data: {
+                        phone: '15868819694'
+                    },
+                    success: function(data) {
+                        console.log(data);
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>
